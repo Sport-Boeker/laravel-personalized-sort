@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace SportBoeker\PersonalizedSort\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class PersonalizedSortCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-personalized-sort';
 
     public $description = 'My command';
 
