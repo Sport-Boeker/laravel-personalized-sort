@@ -1,12 +1,12 @@
 {
     "name": "sportboeker/laravel-personalized-sort",
-    "description": "This package introduces personalized sorting in a easy way.",
+    "description": "Configurable personalized scoring and ranking for Laravel Eloquent models.",
     "keywords": [
         "Sport Boeker",
         "laravel",
         "laravel-personalized-sort"
     ],
-    "homepage": "https://github.com/sportboeker/laravel-personalized-sort",
+    "homepage": "https://github.com/Sport-Boeker/laravel-personalized-sort",
     "license": "MIT",
     "authors": [
         {
@@ -17,14 +17,17 @@
     ],
     "require": {
         "php": "^8.4",
-        "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^11.0||^12.0||^13.0"
+        "illuminate/contracts": "^12.0||^13.0",
+        "illuminate/database": "^12.0||^13.0",
+        "illuminate/pagination": "^12.0||^13.0",
+        "illuminate/support": "^12.0||^13.0",
+        "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
         "nunomaduro/collision": "^8.8",
         "larastan/larastan": "^3.0",
-        "orchestra/testbench": "^10.0.0||^9.0.0",
+        "orchestra/testbench": "^10.0||^11.0",
         "pestphp/pest": "^4.0",
         "pestphp/pest-plugin-arch": "^4.0",
         "pestphp/pest-plugin-laravel": "^4.0",
@@ -34,14 +37,13 @@
     },
     "autoload": {
         "psr-4": {
-            "SportBoeker\\PersonalizedSort\\": "src/",
-            "SportBoeker\\PersonalizedSort\\Database\\Factories\\": "database/factories/"
+            "SportBoeker\\PersonalizedSort\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "SportBoeker\\PersonalizedSort\\Tests\\": "tests/",
-            "Workbench\\App\\": "workbench/app/"
+            "SportBoeker\\PersonalizedSort\\Examples\\": "examples/"
         }
     },
     "scripts": {

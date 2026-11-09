@@ -5,7 +5,21 @@ on:
     paths:
       - '**.php'
       - 'phpstan.neon.dist'
+      - 'phpstan-baseline.neon'
+      - 'composer.json'
+      - 'composer.lock'
       - '.github/workflows/phpstan.yml'
+  pull_request:
+    paths:
+      - '**.php'
+      - 'phpstan.neon.dist'
+      - 'phpstan-baseline.neon'
+      - 'composer.json'
+      - 'composer.lock'
+      - '.github/workflows/phpstan.yml'
+
+permissions:
+  contents: read
 
 jobs:
   phpstan:
